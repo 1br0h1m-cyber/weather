@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.input-group{
+    display: flex;
+    margin: 20px;
+}
+
+input{
+    height: 50px;
+    width: 300px;
+    padding-left: 8px;
+    border-radius: 10px 0px 0px 10px;
+    border-color: aqua;
+    outline: none;
+    color: blue;
+    background-color: rgba(215, 240, 255, 0.7);
+}
+
+button{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 0px 10px 10px 0px;
+    border-color: blue;
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: dodgerblue;
+    transition: all 0.2s;
+}
+
+section{
+    background-image: url(./image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.div{
+    background-image: url(./image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    position: absolute;
+    justify-items: center;
+    width: 40%;
+    height: 80%;
+    top: 10%;
+    left: 30%;
+    box-shadow: 5px 10px 10px black;
+}
+
+.name{
+    font-size: 60px;
+    color:black;
+    background-color: rgba(215, 240, 255, 0.2);
+    border-radius: 10px;
+}
+
+.time{
+    font-size: 30px;
+    color: ghostwhite;
+    margin-bottom: 3px;
+}
+
+hr{
+    width: 95%;
+    margin-top: 10px;
+}
+
+.icon{
+    font-size: 125px;
+}
+
+.cond{
+    font-size: 40px;
+    color: darkblue;
+}
+
+.degree{
+    font-size: 50px;
+    color: black;
+}
+
+.maxmin{
+    color: ghostwhite;
+    font-size: 30px;
+}
