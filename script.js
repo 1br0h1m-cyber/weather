@@ -25,16 +25,17 @@ function Weather(){
             })
             .then((wdata)=>{
 
-                let date = new Date('2024-11-02'); 
+                let today = new Date();
                 let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
                 let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-                
-                let day = days[date.getDay()];
-                let month = months[date.getMonth()];
-                let dayOfMonth = date.getDate();
-                
-                let FullDate = `${day}, ${month} ${dayOfMonth}, ${date.getFullYear()}`;
 
+                let day = days[today.getDay()];
+                let month = months[today.getMonth()];
+                let dayOfMonth = today.getDate();
+                let year = today.getFullYear();
+
+                let FullDate = `${day}, ${month} ${dayOfMonth}, ${year}`;
+                
     
                 Time.innerHTML = FullDate
                 City.innerHTML = wdata.name
