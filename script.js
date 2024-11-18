@@ -59,10 +59,6 @@ function Weather(){
                 else if(wdata.weather[0].main === 'Mist'){
                     Icon.innerHTML = '🌫️'
                 }
-                else if(wdata.weather[0].main === 'Haze'){
-                    Icon.innerHTML = '🌫️'
-                }
-
             })
         }
         
